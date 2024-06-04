@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +24,17 @@
             position: relative;
             z-index: 1;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #343a40;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        header h1 {
+            margin: 0;
         }
         .feature img, .screenshots img {
             width: 100%;
@@ -41,14 +49,16 @@
         .feature {
             margin-bottom: 40px;
             text-align: center;
+            padding: 5px;
         }
         .screenshots {
             text-align: center;
         }
         h2 {
             text-align: center;
-            margin-top: 40px;
-            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            
         }
         p {
             text-align: center;
@@ -81,22 +91,37 @@
             font-size: 1.5em;
             margin-bottom: 10px;
             color: #343a40;
+            padding: 25px;
         }
         .features-section {
             background-color: #000;
             color: #fff;
-            padding: 20px;
+            padding: 5px;
             border-radius: 10px;
             margin-bottom: 40px;
         }
         .features-section h2, .features-section h3 {
             color: #fff;
         }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #343a40;
+            color: white;
+            border-radius: 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>MarketList App</h1>
+        <header>
+            <h1>MarketList App</h1>
+        </header>
         <p>Bem-vindo ao MarketList, o aplicativo que facilita suas compras no supermercado.</p>
         <div class="features-section">
             <h2>Funcionalidades</h2>
@@ -121,6 +146,10 @@
                 <img src="./images/calcule_total.PNG" alt="Calcular total">
             </div>
         </div>
+        <footer>
+            <p>&copy; 2024 MarketList App. Todos os direitos reservados.</p>
+            <p><a href="privacy.html">Política de Privacidade</a></p>
+        </footer>
     </div>
 </body>
 </html>
